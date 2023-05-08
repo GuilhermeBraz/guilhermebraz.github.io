@@ -546,4 +546,4 @@ O algoritmo genético FunctionOptimization busca soluções no espaço de busca 
 - [Problema das oito damas, in: Wikipédia, a enciclopédia livre, [s.l.: s.n.], 2023.](https://pt.wikipedia.org/wiki/Problema_das_oito_damas)
 - [Algoritmos de Busca para Inteligência Artificial - Medium.](https://ricardomatsumura.medium.com/algoritmos-de-busca-para-inteligência-artificial-7cb81172396c)
 - [GRANATYR, Jones, Shakey: Primeiro robô com Inteligência Artificial, IA Expert Academy](https://iaexpert.academy/2017/04/28/shakey-primeiro-robo-com-inteligencia-artificial/)
-- [Reconhecimento de padrões | Introdução – Acervo Lima](https://acervolima.com/reconhecimento-de-padroes-introducao/)
+- [Reconhecimento de padrões Introdução – Acervo Lima](https://acervolima.com/reconhecimento-de-padroes-introducao/)
