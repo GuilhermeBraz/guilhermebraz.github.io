@@ -5,7 +5,7 @@ categories: [portfolio - inteligência artificial, portfolio 2]
 tags: [ai, portfolio, algoritmos de busca]
 ---
 
-## 1. Agente de soluções de problemas
+## Agente de soluções de problemas
 
 Um agente de soluções de problemas é um agente inteligente que utiliza algoritmos e técnicas de inteligência artificial para resolver problemas específicos. Ele analisa o problema, gera soluções possíveis, avalia a eficácia de cada solução e seleciona a melhor opção.
 
@@ -93,7 +93,7 @@ Fonte: [Wikipedia](https://en.wikipedia.org/wiki/Eight_queens_puzzle) -->
 
 
 
-## 2. Problemas de malha aberta e de malha fechada
+## Problemas de malha aberta e de malha fechada
 
 - **Malha aberta**: Problemas de malha aberta são aqueles onde a solução é independente das ações do agente em relação ao ambiente. Um exemplo clássico é o problema do caixeiro-viajante, em que o objetivo é encontrar a menor rota para visitar um conjunto de cidades e retornar à cidade de origem.
 
@@ -126,9 +126,9 @@ print(game_result(board))
 
 Neste exemplo em Python, o código verifica o resultado do jogo da velha em um tabuleiro 3x3 usando apenas algumas linhas de código. A solução deste problema envolve a interação entre os jogadores, com feedback constante do estado do tabuleiro, que é afetado pelas ações de ambos os agentes.
 
-## 3. Algoritmos de busca
+## Algoritmos de busca
 
-### 3.1 Busca cega
+### Busca cega
 
 Os algoritmos de busca cega, também conhecidos como busca não-informada, não utilizam informações específicas do problema para tomar decisões. Aqui estão alguns algoritmos de busca cega comuns:
 
@@ -249,7 +249,7 @@ Nesse exemplo, o Uniform Cost Search é provavelmente a melhor escolha entre os 
 
 Em resumo, a escolha do algoritmo de busca cega apropriado depende das características e requisitos do problema específico. É essencial analisar cuidadosamente o problema e entender as propriedades de cada algoritmo antes de tomar uma decisão.
 
-### 3.2 Busca informada
+### Busca informada
 
 A busca informada utiliza informações específicas do problema para guiar a busca. As funções heurísticas são usadas para estimar o custo para alcançar o objetivo. Algoritmos comuns de busca informada incluem A* e Busca Gulosa.
 
@@ -334,7 +334,7 @@ Neste exemplo, o algoritmo A* é provavelmente a melhor escolha entre os algorit
 
 Em resumo, a escolha do algoritmo de busca informada apropriado depende das características e requisitos do problema específico, bem como da qualidade da função heurística disponível. É essencial analisar cuidadosamente o problema e entender as propriedades de cada algoritmo antes de tomar uma decisão.
 
-### 3.3 Busca em ambientes complexos
+### Busca em ambientes complexos
 
 Ambientes complexos apresentam desafios adicionais, como informações incompletas, restrições de tempo ou espaço. Vamos explorar como as funções heurísticas e algoritmos de busca local podem ser aplicados em ambientes complexos e discutir outras abordagens para lidar com esses desafios.
 
@@ -353,8 +353,6 @@ def manhattan_distance(state, goal, size):
             distance += abs(s // size - g // size) + abs(s % size - g % size)
     return distance
 ```
-
-(imagem aqui, pesquise por 8-puzzle)
 
 A utilização de uma boa função heurística admissível pode melhorar significativamente a eficiência de algoritmos de busca informada, como o A*, especialmente em ambientes complexos com um grande número de estados possíveis.
 
@@ -375,15 +373,13 @@ def hill_climbing_search(problem, initial_state):
         current_state = next_state
 ```
 
-(imagem aqui, pesquise por hill-climbing search)
-
 Há variações do Hill-climbing search, como Stochastic hill climbing, First-choice hill climbing, Random-restart hill climbing e Local Beam Search, que podem ser aplicadas para lidar com os desafios específicos de ambientes complexos, como máximas locais, cumes e platôs.
 
 Ao lidar com ambientes complexos, é crucial entender os desafios específicos do problema e adaptar ou selecionar algoritmos de busca apropriados para enfrentá-los. Funções heurísticas e algoritmos de busca local podem oferecer soluções mais eficientes e de melhor qualidade, especialmente em cenários com informações incompletas, restrições de tempo ou espaço.
 
-### 3.4 Algoritmos genéticos
+### Algoritmos Genéticos
 
-Algoritmos genéticos são inspirados na evolução natural e usam métodos como seleção, cruzamento e mutação para encontrar soluções ótimas ou aproximadas. Eles são particularmente úteis para resolver problemas de otimização e busca global.
+Os algoritmos genéticos (AGs) são métodos de busca inspirados nos processos de seleção natural e evolução. Eles utilizam técnicas como seleção, cruzamento (crossover) e mutação para explorar e otimizar soluções para problemas complexos. Os AGs são especialmente úteis para resolver problemas de otimização e busca global em espaços de soluções de grande dimensão.
 
 ```python
 class GeneticAlgorithm:
@@ -395,17 +391,59 @@ class GeneticAlgorithm:
         # implementação do algoritmo
 ```
 
-Um exemplo de aplicação de algoritmos genéticos é o problema da mochila, onde o objetivo é selecionar itens com diferentes pesos e valores de tal forma que o valor total dos itens selecionados seja maximizado, sem exceder a capacidade da mochila.
+#### Exemplo: Problema da Mochila
 
-## 4. Discussões
+O problema da mochila é um exemplo clássico de problema de otimização combinatória. Neste problema, temos um conjunto de itens, cada um com um peso e um valor. O objetivo é selecionar um subconjunto desses itens de modo que o valor total dos itens selecionados seja maximizado, sem exceder a capacidade da mochila.
 
-### 4.1 Algoritmos de procura não discutidos em sala
+Para resolver o problema da mochila com algoritmos genéticos, podemos representar cada solução como um cromossomo, onde cada gene corresponde à presença (1) ou ausência (0) de um item na mochila. A função de aptidão (fitness) avalia a qualidade da solução, levando em consideração o valor total dos itens e a restrição de capacidade da mochila.
 
-- **Beam Search**: É uma variação da busca em largura que explora apenas um número fixo de nós filhos com maior valor heurístico. Isso reduz o consumo de memória, mas não garante a otimalidade da solução.
+Suponha que temos uma mochila com capacidade para 50 kg e cinco itens disponíveis:
 
-- **Simulated Annealing**: É um algoritmo de busca global baseado em um processo físico chamado recozimento. Ele aceita soluções piores com probabilidade decrescente, permitindo escapar de ótimos locais. É útil para problemas com muitos ótimos locais.
+| Item | Peso (kg) | Valor |
+|------|-----------|-------|
+| A    | 10        | 60    |
+| B    | 20        | 100   |
+| C    | 30        | 120   |
+| D    | 40        | 200   |
+| E    | 50        | 300   |
 
-### 4.2 Expansão do uso de algoritmos de procura
+Uma solução pode ser representada como um cromossomo, como `[1, 0, 1, 0, 0]`, o que indica que os itens A e C foram selecionados. A função de aptidão poderia ser a soma dos valores dos itens selecionados, desde que o peso total não exceda a capacidade da mochila.
+
+Durante o processo de evolução, os AGs aplicam os seguintes passos:
+
+1. **Seleção**: Escolha dos pais que participarão do cruzamento, com base em suas aptidões. Os pais com maior aptidão têm maior probabilidade de serem selecionados.
+
+2. **Cruzamento**: Criação de novos indivíduos (descendentes) a partir dos pais selecionados, combinando seus genes. Isso pode ser feito por meio de diferentes técnicas de cruzamento, como o cruzamento de um ponto ou o cruzamento uniforme.
+
+3. **Mutação**: Alteração aleatória de alguns genes dos descendentes, com uma probabilidade baixa. A mutação ajuda a manter a diversidade genética na população e a explorar novas soluções.
+
+4. **Substituição**: Substituição da população atual pela nova geração de descendentes, geralmente mantendo alguns dos melhores indivíduos da geração anterior.
+
+O processo de evolução é repetido por um número predeterminado de gerações ou até que uma solução satisfatória seja encontraria.
+
+Neste exemplo, o algoritmo genético inicia com uma população aleatória de cromossomos. A cada geração, os melhores indivíduos têm maior chance de serem selecionados como pais. Os pais são cruzados e seus descendentes sofrem mutações, o que resulta em uma nova população.
+
+Após várias gerações, a população tende a convergir para soluções de alta qualidade. No caso do problema da mochila, isso significa soluções que maximizam o valor total dos itens selecionados, respeitando a restrição de capacidade da mochila. Por exemplo, após a evolução, o algoritmo genético pode encontrar uma solução como `[0, 1, 1, 0, 0]`, que seleciona os itens B e C, com um valor total de 220 e um peso total de 50 kg.
+
+Os algoritmos genéticos são uma abordagem eficaz para resolver problemas de otimização e busca em ambientes complexos, especialmente quando o espaço de soluções é grande e as soluções exatas são difíceis de encontrar. A escolha adequada da função de aptidão, dos métodos de seleção, cruzamento e mutação, e dos parâmetros do algoritmo (como tamanho da população e taxa de mutação) é essencial para garantir a eficiência e eficácia do algoritmo genético na resolução do problema específico.
+
+## Discussões
+
+### Algoritmos de procura não discutidos em sala
+
+### Tabu Search
+
+Tabu Search é um algoritmo de busca local meta-heurístico que explora o espaço de soluções utilizando movimentos locais. Ele mantém uma lista chamada "tabu" para armazenar soluções visitadas recentemente, evitando que o algoritmo retorne a elas e caia em ciclos. Essa abordagem ajuda a escapar de ótimos locais e pode encontrar soluções de melhor qualidade.
+
+Exemplo: Em um problema de agendamento de tarefas em máquinas, o Tabu Search pode ser usado para encontrar uma solução aproximada, movendo-se localmente no espaço de soluções e evitando ciclos, através do uso da lista tabu.
+
+### Simulated Annealing
+
+Simulated Annealing é um algoritmo de busca global inspirado no processo físico chamado recozimento. Ele aceita soluções piores com probabilidade decrescente, permitindo escapar de ótimos locais e, eventualmente, convergir para o ótimo global. É útil para problemas com muitos ótimos locais.
+
+Exemplo: Em um problema de otimização de layout de circuitos, o Simulated Annealing pode ser usado para encontrar uma disposição de componentes que minimize o comprimento total das conexões, permitindo temporariamente soluções piores para escapar de ótimos locais.
+
+### Expansão do uso de algoritmos de procura
 
 - **Jogos**: Algoritmos de busca, como minimax e alfa-beta pruning, são usados para modelar a tomada de decisões em jogos competitivos, como xadrez e Go.
 
@@ -413,47 +451,77 @@ Um exemplo de aplicação de algoritmos genéticos é o problema da mochila, ond
 
 - **Otimização**: Algoritmos de busca, como algoritmos genéticos e simulated annealing, são usados para resolver problemas de otimização combinatorial, como o problema do caixeiro viajante e o problema da mochila.
 
-### 4.3 Expansão sobre algoritmos genéticos
+### Expansão sobre algoritmos genéticos
 
 - **Algoritmos genéticos com restrições**: Algoritmos genéticos podem ser adaptados para resolver problemas com restrições específicas, utilizando técnicas como penalidades ou operadores de reparo.
 
 - **Algoritmos genéticos multiobjetivo**: Algoritmos genéticos podem ser adaptados para resolver problemas com múltiplos objetivos, utilizando conceitos como dominância de Pareto e seleção não-dominada.
 
-### 4.4 Uso de algoritmos de busca em IA
+### Uso de algoritmos de busca em IA
 
 - **Navegação de robôs**: Algoritmos de busca, como A* e D*, são usados para planejar o caminho de robôs móveis em ambientes complexos e dinâmicos.
 
 - **Reconhecimento de padrões**: Algoritmos de busca, como k-Nearest Neighbors (k-NN) e Support Vector Machines (SVM), são usados para classificar dados em problemas de reconhecimento de padrões, como reconhecimento de dígitos escritos à mão e análise de sentimentos.
 
-## 5. Projetos e problemas
+## Projetos e problemas
 
-### 5.1 Algoritmo de busca cega: Busca Iterativa em Profundidade (Iterative Deepening Depth-First Search - IDDFS)
+### Algoritmo de busca informada: Dijkstra's Algorithm
 
-IDDFS combina as melhores características de BFS e DFS, explorando nós em profundidade limitada e incrementando essa profundidade a cada iteração.
+O algoritmo de Dijkstra é um algoritmo de busca informada que encontra o caminho mais curto entre um nó inicial e todos os outros nós em um grafo ponderado. Ele é garantido para encontrar a solução ótima.
 
 ```python
-def iterative_deepening_dfs(problem):
+import heapq
+
+def dijkstra(graph, start):
+    distances = {node: float('infinity') for node in graph}
+    distances[start] = 0
+    pq = [(0, start)]
+
+    while pq:
+        current_distance, current_node = heapq.heappop(pq)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(pq, (distance, neighbor))
+
+    return distances
+```
+
+**Exemplo:** Encontrar o caminho mais curto em um grafo ponderado.
+
+### Algoritmo de busca cega: Iterative Deepening Depth-First Search (IDDFS)
+
+O IDDFS combina DFS e BFS, realizando uma busca em profundidade limitada e aumentando o limite a cada iteração até encontrar o objetivo.
+
+```python
+def iddfs(graph, start, goal):
     depth = 0
     while True:
-        result = depth_limited_search(problem, depth)
-        if result is not None:
-            return result
+        result = dls(graph, start, goal, depth)
+        if result == "found":
+            return f"Goal found at depth {depth}"
         depth += 1
 
-def depth_limited_search(problem, limit):
-    # implementação do algoritmo
+def dls(graph, node, goal, depth):
+    if depth == 0 and node == goal:
+        return "found"
+    if depth > 0:
+        for neighbor in graph[node]:
+            result = dls(graph, neighbor, goal, depth - 1)
+            if result == "found":
+                return "found"
+    return "not found"
 ```
 
-### 5.2 Algoritmo de busca informada: Busca de custo uniforme (Uniform Cost Search - UCS)
+**Exemplo:** Encontrar um objetivo em um grafo não ponderado, usando IDDFS.
 
-UCS explora nós em ordem crescente de custo acumulado, garantindo que a solução encontrada seja a de menor custo.
-
-```python
-def uniform_cost_search(problem, cost_function):
-    # implementação do algoritmo UCS
-```
-
-### 5.3 Exemplo de uso de algoritmos genéticos: Otimização de funções
+### Exemplo de uso de algoritmos genéticos: Otimização de funções
 
 Algoritmos genéticos podem ser aplicados para otimizar funções matemáticas. Por exemplo, encontrar o mínimo global da função Rastrigin, uma função não-convexa com muitos ótimos locais.
 
