@@ -83,9 +83,6 @@ Caso não seja possível encontrar uma coluna segura para a dama atual, o algori
 
 A animação ilustra esse processo de forma visual, mostrando como o algoritmo tenta posicionar cada dama em uma coluna segura e volta atrás caso não seja possível encontrar uma solução viável. Esse tipo de abordagem permite encontrar a solução para o problema de forma eficiente, sem precisar testar todas as combinações possíveis de posicionamento das damas no tabuleiro.
 
-<!-- ![Eight-queens-animation](https://upload.wikimedia.org/wikipedia/commons/1/1f/Eight-queens-animation.gif)
-
-Fonte: [Wikipedia](https://en.wikipedia.org/wiki/Eight_queens_puzzle) -->
 <div align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Eight-queens-animation.gif" alt="Animação do problema das oito rainhas">
   <br>Fonte: <a href="https://en.wikipedia.org/wiki/Eight_queens_puzzle">Wikipedia</a>
@@ -459,7 +456,12 @@ Exemplo: Em um problema de otimização de layout de circuitos, o Simulated Anne
 
 ### Uso de algoritmos de busca em IA
 
-- **Navegação de robôs**: Algoritmos de busca, como A* e D*, são usados para planejar o caminho de robôs móveis em ambientes complexos e dinâmicos.
+- **Navegação de robôs**: Navegação de robôs: Algoritmos de busca, como A* e D*, são usados para planejar o caminho de robôs móveis em ambientes complexos e dinâmicos. Esses algoritmos permitem que os robôs encontrem rotas ótimas ou subótimas, evitando obstáculos e minimizando o custo de movimento. Um exemplo de aplicação é o robô Shakey, que foi um dos primeiros a usar a busca A* para navegar em um ambiente desconhecido.
+
+<div align="center">
+  <img src="https://www.robot-magazine.fr/wp-content/uploads/2022/07/21434.jpg" alt="Robô Shakey" width="100%">
+  <br>Fonte: <a href="https://www.robot-magazine.fr/lhomme-le-mythe-la-legende-shakey-le-robot-le-premier-robot-au-monde-base-sur-lia-1/">Robot Magazine</a>
+</div>
 
 - **Reconhecimento de padrões**: Algoritmos de busca, como k-Nearest Neighbors (k-NN) e Support Vector Machines (SVM), são usados para classificar dados em problemas de reconhecimento de padrões, como reconhecimento de dígitos escritos à mão e análise de sentimentos.
 
@@ -467,7 +469,9 @@ Exemplo: Em um problema de otimização de layout de circuitos, o Simulated Anne
 
 ### Algoritmo de busca informada: Dijkstra's Algorithm
 
-O algoritmo de Dijkstra é um algoritmo de busca informada que encontra o caminho mais curto entre um nó inicial e todos os outros nós em um grafo ponderado. Ele é garantido para encontrar a solução ótima.
+**Exemplo:** Encontrar o caminho mais curto em um grafo ponderado.
+
+O algoritmo de Dijkstra é um algoritmo de busca informada que encontra o caminho mais curto entre um nó inicial e todos os outros nós em um grafo ponderado. Ele é garantido para encontrar a solução ótima. No exemplo a seguir, o algoritmo Dijkstra é aplicado para encontrar o menor custo de deslocamento entre dois pontos em um mapa.
 
 ```python
 import heapq
@@ -493,11 +497,11 @@ def dijkstra(graph, start):
     return distances
 ```
 
-**Exemplo:** Encontrar o caminho mais curto em um grafo ponderado.
-
 ### Algoritmo de busca cega: Iterative Deepening Depth-First Search (IDDFS)
 
-O IDDFS combina DFS e BFS, realizando uma busca em profundidade limitada e aumentando o limite a cada iteração até encontrar o objetivo.
+**Exemplo:** Encontrar um objetivo em um grafo não ponderado, usando IDDFS.
+
+O IDDFS combina DFS e BFS, realizando uma busca em profundidade limitada e aumentando o limite a cada iteração até encontrar o objetivo. No exemplo a seguir, o IDDFS é usado para encontrar o caminho mais curto entre dois pontos em um grafo não ponderado.
 
 ```python
 def iddfs(graph, start, goal):
@@ -519,11 +523,11 @@ def dls(graph, node, goal, depth):
     return "not found"
 ```
 
-**Exemplo:** Encontrar um objetivo em um grafo não ponderado, usando IDDFS.
-
 ### Exemplo de uso de algoritmos genéticos: Otimização de funções
 
-Algoritmos genéticos podem ser aplicados para otimizar funções matemáticas. Por exemplo, encontrar o mínimo global da função Rastrigin, uma função não-convexa com muitos ótimos locais.
+**Exemplo:** Encontrar o mínimo global da função Rastrigin, uma função não-convexa com muitos ótimos locais.
+
+Algoritmos genéticos podem ser aplicados para otimizar funções matemáticas. No exemplo a seguir, um algoritmo genético é usado para encontrar o mínimo global da função Rastrigin, uma função não-convexa com muitos ótimos locais.
 
 ```python
 import numpy as np
@@ -549,3 +553,6 @@ O algoritmo genético FunctionOptimization busca soluções no espaço de busca 
 - NORVIG, P.; RUSSELL, S., Inteligência artificial: Tradução da 3a Edição, [s.l.]: Elsevier Brasil, 2014.
 - [Algoritmo genético, in: Wikipédia, a enciclopédia livre, [s.l.: s.n.], 2023.](https://pt.wikipedia.org/wiki/Algoritmo_gen%C3%A9tico)
 - [Problema das oito damas, in: Wikipédia, a enciclopédia livre, [s.l.: s.n.], 2023.](https://pt.wikipedia.org/wiki/Problema_das_oito_damas)
+- [Algoritmos de Busca para Inteligência Artificial - Medium.](https://ricardomatsumura.medium.com/algoritmos-de-busca-para-inteligência-artificial-7cb81172396c)
+- [GRANATYR, Jones, Shakey: Primeiro robô com Inteligência Artificial, IA Expert Academy](https://iaexpert.academy/2017/04/28/shakey-primeiro-robo-com-inteligencia-artificial/)
+- [Reconhecimento de padrões | Introdução – Acervo Lima](https://acervolima.com/reconhecimento-de-padroes-introducao/)
