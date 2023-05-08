@@ -244,20 +244,27 @@ Suponha que estamos trabalhando com um problema de roteamento, em que o objetivo
 
 Nesse exemplo, o Uniform Cost Search é provavelmente a melhor escolha entre os algoritmos de busca cega, pois ele garante encontrar o caminho de menor custo. No entanto, se você estiver disposto a usar uma função heurística, a busca Best First pode ser ainda mais eficiente.
 
-Em resumo, a escolha do algoritmo de busca cega apropriado depende das características e requisitos do problema específico. É essencial analisar cuidadosamente o problema e entender as propriedades de cada algoritmo antes de tomar uma decisão.
-
 ### Busca informada
 
 A busca informada utiliza informações específicas do problema para guiar a busca. As funções heurísticas são usadas para estimar o custo para alcançar o objetivo. Algoritmos comuns de busca informada incluem A* e Busca Gulosa.
 
-#### Funções Heurísticas
+#### Funções heurísticas
 
-Funções heurísticas são usadas para estimar o custo do estado atual até o objetivo. Elas fornecem uma maneira de priorizar a exploração do espaço de busca, levando em conta o conhecimento específico do problema. Um exemplo clássico é o problema do caminho mais curto, onde a distância em linha reta entre o nó atual e o destino pode ser usada como função heurística.
+Funções heurísticas são usadas para estimar o custo do estado atual até o objetivo. Por exemplo, no problema do 8-puzzle, duas funções heurísticas comuns são o número de peças mal posicionadas e a soma das distâncias das peças até a posição de objetivo.
 
 ```python
-def heuristic_function(state):
-    # implementação da função heurística
+def misplaced_tiles(state, goal):
+    return sum(s != g for s, g in zip(state, goal) if s != 0)
+
+def manhattan_distance(state, goal, size):
+    distance = 0
+    for s, g in zip(state, goal):
+        if s != 0 and s != g:
+            distance += abs(s // size - g // size) + abs(s % size - g % size)
+    return distance
 ```
+
+A utilização de uma boa função heurística admissível pode melhorar significativamente a eficiência de algoritmos de busca informada, como o A*, especialmente em ambientes complexos com um grande número de estados possíveis.
 
 #### A* Search
 
@@ -292,7 +299,7 @@ def a_star_search(problem, heuristic_function):
 
 #### Busca Gulosa
 
-A Busca Gulosa, também conhecida como Best-First Search, é um algoritmo de busca informada que utiliza apenas a função heurística para guiar a busca. Diferentemente do A*, a Busca Gulosa não leva em consideração o custo real do caminho percorrido até o estado atual.
+A Busca Gulosa, também conhecida como Greedy Best-First Search, é um algoritmo de busca informada que utiliza apenas a função heurística para guiar a busca. Diferentemente do A*, a Busca Gulosa não leva em consideração o custo real do caminho percorrido até o estado atual.
 
 ```python
 import heapq
@@ -319,8 +326,6 @@ def greedy_best_first_search(problem, heuristic_function):
 
 Em resumo, a busca informada utiliza informações específicas do problema para guiar a busca, enquanto a busca cega não. Algoritmos como A* e Busca Gulosa são exemplos de busca informada que usam funções heurísticas para estimar o custo do estado atual até o objetivo. A escolha do algoritmo de busca informada apropriado depende das características e requisitos do problema específico, assim como no caso da busca cega. Analisar cuidadosamente o problema e entender as propriedades de cada algoritmo são essenciais antes de tomar uma decisão.
 
-Ao escolher um algoritmo de busca informada, é importante levar em consideração as características específicas do problema e a qualidade da função heurística disponível. Cada algoritmo possui suas vantagens e desvantagens, e a seleção do método de busca apropriado pode ter um impacto significativo no desempenho e na qualidade da solução.
-
 Vamos considerar um problema de planejamento de rota em um mapa 2D com obstáculos, onde o objetivo é encontrar o caminho mais curto entre dois pontos. Neste contexto, podemos analisar os dois algoritmos de busca informada mencionados e como cada um deles pode ser usado.
 
 1. **A* Search**: O algoritmo A* é uma boa opção para esse problema, pois combina o custo real do caminho percorrido com o custo estimado pela função heurística. Ao utilizar a distância em linha reta entre o nó atual e o destino como função heurística, o A* garante que encontraremos o caminho mais curto, desde que a função heurística seja admissível e consistente. Além disso, o A* tende a ser eficiente na exploração do espaço de busca.
@@ -329,31 +334,17 @@ Vamos considerar um problema de planejamento de rota em um mapa 2D com obstácul
 
 Neste exemplo, o algoritmo A* é provavelmente a melhor escolha entre os algoritmos de busca informada, pois ele garante encontrar o caminho mais curto e é eficiente na exploração do espaço de busca. No entanto, a Busca Gulosa pode ser útil em casos em que a função heurística é muito informativa e a necessidade de encontrar a solução ótima não é crítica.
 
-Em resumo, a escolha do algoritmo de busca informada apropriado depende das características e requisitos do problema específico, bem como da qualidade da função heurística disponível. É essencial analisar cuidadosamente o problema e entender as propriedades de cada algoritmo antes de tomar uma decisão.
-
 ### Busca em ambientes complexos
 
-Ambientes complexos apresentam desafios adicionais, como informações incompletas, restrições de tempo ou espaço. Vamos explorar como as funções heurísticas e algoritmos de busca local podem ser aplicados em ambientes complexos e discutir outras abordagens para lidar com esses desafios.
+Ambientes complexos apresentam desafios como informações incompletas, restrições de tempo ou espaço e dinâmicas em constante mudança. Para lidar com esses desafios, é necessário utilizar abordagens adaptativas, planejamento em tempo real e algoritmos projetados para ambientes dinâmicos.
 
-#### Funções heurísticas
+Abordagens adaptativas, como o Q-Learning, permitem que os algoritmos de busca aprendam e ajustem suas estratégias com base no feedback do ambiente. Planejamento em tempo real, exemplificado pelo Real-Time A* (RTA*), busca encontrar soluções boas o suficiente dentro do tempo disponível, tomando decisões baseadas em informações locais. Já algoritmos como o D* Lite são projetados para lidar com ambientes dinâmicos, atualizando o caminho ótimo conforme o ambiente muda e novas informações são obtidas.
 
-Funções heurísticas são usadas para estimar o custo do estado atual até o objetivo. Por exemplo, no problema do 8-puzzle, duas funções heurísticas comuns são o número de peças mal posicionadas e a soma das distâncias das peças até a posição de objetivo.
-
-```python
-def misplaced_tiles(state, goal):
-    return sum(s != g for s, g in zip(state, goal) if s != 0)
-
-def manhattan_distance(state, goal, size):
-    distance = 0
-    for s, g in zip(state, goal):
-        if s != 0 and s != g:
-            distance += abs(s // size - g // size) + abs(s % size - g % size)
-    return distance
-```
-
-A utilização de uma boa função heurística admissível pode melhorar significativamente a eficiência de algoritmos de busca informada, como o A*, especialmente em ambientes complexos com um grande número de estados possíveis.
+Ao enfrentar ambientes complexos, é crucial entender os desafios específicos e selecionar algoritmos de busca apropriados para encontrar soluções eficientes e de alta qualidade. Essas estratégias ajudam a abordar as incertezas e restrições inerentes a tais ambientes.
 
 #### Busca local
+
+Assim como explicado anteriormente, ambientes complexos apresentam desafios como informações incompletas, restrições de tempo ou espaço e dinâmicas em constante mudança. A busca local é uma abordagem eficaz para encontrar soluções adaptativas e flexíveis, explorando o espaço de estados de maneira mais direcionada e local, baseando-se em informações disponíveis nas proximidades do estado atual.
 
 Algoritmos de busca local executam a busca puramente local no espaço de estados, avaliando e modificando um ou mais estados atuais, em vez de explorar sistematicamente caminhos a partir do estado inicial. Esses algoritmos são voltados para problemas em que o que importa é o estado da solução, e não o custo do caminho para alcançá-lo.
 
