@@ -544,3 +544,8 @@ optimizer.evolve()
 ```
 
 O algoritmo genético FunctionOptimization busca soluções no espaço de busca da função Rastrigin, selecionando indivíduos com base em sua aptidão (valor da função), realizando cruzamento e mutação para gerar novos indivíduos e, eventualmente, convergindo para uma solução próxima ao mínimo global.
+
+## Referências
+- NORVIG, P.; RUSSELL, S., Inteligência artificial: Tradução da 3a Edição, [s.l.]: Elsevier Brasil, 2014.
+- [Algoritmo genético, in: Wikipédia, a enciclopédia livre, [s.l.: s.n.], 2023.](https://pt.wikipedia.org/wiki/Algoritmo_gen%C3%A9tico)
+- [Problema das oito damas, in: Wikipédia, a enciclopédia livre, [s.l.: s.n.], 2023.](https://pt.wikipedia.org/wiki/Problema_das_oito_damas)
