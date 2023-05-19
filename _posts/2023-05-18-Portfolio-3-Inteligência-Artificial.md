@@ -45,9 +45,7 @@ A escolha do algoritmo para resolver um CSP pode variar dependendo do problema. 
 
 - **Backtracking**: Este é um método de busca em profundidade que tenta resolver o problema atribuindo valores às variáveis uma a uma, voltando atrás (daí o nome) quando uma atribuição não leva a uma solução. É um algoritmo recursivo que pode ser aprimorado com heurísticas de seleção de variáveis e ordenação de valores.
 
-- **Forward Checking**: Este método envolve verificar rest
-
-rições à medida que atribuímos valores às variáveis, reduzindo assim o espaço de busca. Quando atribuímos um valor a uma variável, olhamos adiante e removemos do domínio das outras variáveis quaisquer valores que causem uma inconsistência.
+- **Forward Checking**: Este método envolve verificar restrições à medida que atribuímos valores às variáveis, reduzindo assim o espaço de busca. Quando atribuímos um valor a uma variável, olhamos adiante e removemos do domínio das outras variáveis quaisquer valores que causem uma inconsistência.
 
 - **Propagação de Restrições (AC-3)**: Este algoritmo usa a ideia de consistência de arco para reduzir o tamanho do domínio de cada variável. Em cada passo, verifica todas as restrições e remove valores do domínio de cada variável que não possam participar de uma solução. O AC-3 pode ser combinado com o algoritmo de backtracking para melhorar a eficiência da resolução.
 
