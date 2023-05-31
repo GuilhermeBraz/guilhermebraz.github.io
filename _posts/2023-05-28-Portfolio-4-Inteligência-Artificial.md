@@ -65,12 +65,6 @@ Os agentes baseados em lógica de primeira ordem elevam o jogo no que diz respei
 
 Um exemplo concreto disso pode ser visto no uso desses agentes na NASA. O sistema Remote Agent, usado para controlar a sonda espacial Deep Space 1, empregava lógica de primeira ordem para lidar com o planejamento de tarefas e diagnósticos a bordo da nave, mostrando a eficácia desse tipo de lógica em um ambiente de missão crítica.
 
-
-<!-- <div align="center">
-  <img src="https://solarsystem.nasa.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdVptIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d85244ca90d35cbefb293ba6259663472d9b6716/PIA04242_1280.jpg?disposition=inline" alt="Deep space 1" width="100%">
-  <br>Fonte: <a href="https://solarsystem.nasa.gov/news/731/10-things-looking-back-at-deep-space-1/">NASA</a>
-</div>  -->
-
 Por outro lado, os agentes baseados em lógica difusa abordam o desafio de lidar com incertezas e ambiguidades. Ao contrário da lógica clássica, onde uma afirmação é verdadeira ou falsa, a lógica difusa permite graus de verdade, tornando-a ideal para situações onde a precisão absoluta não é possível ou prática.
 
 Um exemplo de uso prático da lógica difusa é o controle de sistemas complexos, como o controle de temperatura em edifícios ou o sistema de freios ABS em veículos. Por exemplo, em um sistema de controle de temperatura, um agente baseado em lógica difusa pode levar em consideração fatores como a temperatura externa, a presença de pessoas no edifício e o tempo do dia para ajustar de maneira eficaz a temperatura interna. Este agente, então, pode tomar decisões mesmo quando as informações disponíveis são imprecisas ou incompletas.
@@ -88,11 +82,6 @@ Na indústria financeira, agentes lógicos estão sendo empregados em sistemas d
 No universo dos jogos, os agentes lógicos desempenham um papel fundamental na criação de NPCs (Non-Player Characters), que são capazes de interagir com os jogadores de maneiras complexas e realistas. Por meio de lógica e inferência, esses personagens podem adaptar seu comportamento de acordo com as ações dos jogadores, tornando a experiência do jogo mais imersiva.
 
 Até mesmo na arte, a IA está deixando sua marca. Agentes lógicos podem ser usados para criar obras de arte, aplicando regras e princípios de design para gerar composições estéticas. Isso foi exemplificado quando uma obra de arte criada por um algoritmo de IA foi leiloada pela Christie's, uma casa de leilões de arte de renome, demonstrando a crescente aceitação da IA no mundo da arte.
-
-<!-- <div align="center">
-  <img src="https://s2-g1.glbimg.com/KNPNmBnTdsGDn5kUEw-adasU0QQ=/0x0:620x620/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2018/w/y/nZAW1WTUOs3pvl8z8Vfw/edmond-de-belamy.jpg" alt="leilao arte" width="100%">
-  <br>Fonte: <a href="https://g1.globo.com/pop-arte/noticia/2018/10/25/arte-feita-por-algoritmo-e-comprada-por-r-16-milhao-em-leilao-da-christies-em-ny.ghtml">Arte com algoritmo</a>
-</div> -->
 
 Esses são apenas alguns exemplos de como os agentes lógicos estão moldando nosso mundo e expandindo os horizontes da IA. A capacidade desses agentes de aprender, adaptar-se e tomar decisões informadas promete revolucionar ainda mais setores no futuro.
 
