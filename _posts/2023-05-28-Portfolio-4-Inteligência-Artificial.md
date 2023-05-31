@@ -65,12 +65,11 @@ Os agentes baseados em lógica de primeira ordem elevam o jogo no que diz respei
 
 Um exemplo concreto disso pode ser visto no uso desses agentes na NASA. O sistema Remote Agent, usado para controlar a sonda espacial Deep Space 1, empregava lógica de primeira ordem para lidar com o planejamento de tarefas e diagnósticos a bordo da nave, mostrando a eficácia desse tipo de lógica em um ambiente de missão crítica.
 
-<!-- ![Deep space 1](../assets/images/deep-space-1.jpeg)
 
-<div align="center">
+<!-- <div align="center">
   <img src="https://solarsystem.nasa.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdVptIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d85244ca90d35cbefb293ba6259663472d9b6716/PIA04242_1280.jpg?disposition=inline" alt="Deep space 1" width="100%">
   <br>Fonte: <a href="https://solarsystem.nasa.gov/news/731/10-things-looking-back-at-deep-space-1/">NASA</a>
-</div> -->
+</div>  -->
 
 Por outro lado, os agentes baseados em lógica difusa abordam o desafio de lidar com incertezas e ambiguidades. Ao contrário da lógica clássica, onde uma afirmação é verdadeira ou falsa, a lógica difusa permite graus de verdade, tornando-a ideal para situações onde a precisão absoluta não é possível ou prática.
 
