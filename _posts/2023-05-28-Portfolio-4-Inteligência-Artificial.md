@@ -148,4 +148,4 @@ Esta tabela indica que o agente deve levar o guarda-chuva quando está chovendo,
 - Deep Space 1: Advanced Technologies: Remote Agent FAQ, disponível em: <https://www.jpl.nasa.gov/nmp/ds1/tech/autoraFAQ.html>. acesso em: 31 maio 2023.
 - Quadro feito por algoritmo é comprado por R$ 1,6 milhão em leilão nos EUA, G1, disponível em: <https://g1.globo.com/pop-arte/noticia/2018/10/25/arte-feita-por-algoritmo-e-comprada-por-r-16-milhao-em-leilao-da-christies-em-ny.ghtml>. acesso em: 31 maio 2023.
 - LANDAU, By Elizabeth, 10 Things: Looking Back at Deep Space 1, NASA Solar System Exploration, disponível em: <https://solarsystem.nasa.gov/news/731/10-things-looking-back-at-deep-space-1>. acesso em: 31 maio 2023.
-- Inteligência artificial em Medicina | Machine Learning - Brasil | IBM, disponível em: <https://www.ibm.com/br-pt/watson-health/learn/artificial-intelligence-medicine>. acesso em: 31 maio 2023.
+- Inteligência artificial em Medicina - Machine Learning - Brasil - IBM, disponível em: <https://www.ibm.com/br-pt/watson-health/learn/artificial-intelligence-medicine>. acesso em: 31 maio 2023.
