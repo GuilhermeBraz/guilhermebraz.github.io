@@ -65,6 +65,13 @@ Os agentes baseados em lógica de primeira ordem elevam o jogo no que diz respei
 
 Um exemplo concreto disso pode ser visto no uso desses agentes na NASA. O sistema Remote Agent, usado para controlar a sonda espacial Deep Space 1, empregava lógica de primeira ordem para lidar com o planejamento de tarefas e diagnósticos a bordo da nave, mostrando a eficácia desse tipo de lógica em um ambiente de missão crítica.
 
+<!-- ![Deep space 1](../assets/images/deep-space-1.jpeg) -->
+
+<div align="center">
+  <img src="../assets/images/deep-space-1.jpeg" alt="Deep space 1" width="35%">
+  <br>Fonte: <a href="https://solarsystem.nasa.gov/news/731/10-things-looking-back-at-deep-space-1/">NASA</a>
+</div>
+
 Por outro lado, os agentes baseados em lógica difusa abordam o desafio de lidar com incertezas e ambiguidades. Ao contrário da lógica clássica, onde uma afirmação é verdadeira ou falsa, a lógica difusa permite graus de verdade, tornando-a ideal para situações onde a precisão absoluta não é possível ou prática.
 
 Um exemplo de uso prático da lógica difusa é o controle de sistemas complexos, como o controle de temperatura em edifícios ou o sistema de freios ABS em veículos. Por exemplo, em um sistema de controle de temperatura, um agente baseado em lógica difusa pode levar em consideração fatores como a temperatura externa, a presença de pessoas no edifício e o tempo do dia para ajustar de maneira eficaz a temperatura interna. Este agente, então, pode tomar decisões mesmo quando as informações disponíveis são imprecisas ou incompletas.
@@ -82,6 +89,11 @@ Na indústria financeira, agentes lógicos estão sendo empregados em sistemas d
 No universo dos jogos, os agentes lógicos desempenham um papel fundamental na criação de NPCs (Non-Player Characters), que são capazes de interagir com os jogadores de maneiras complexas e realistas. Por meio de lógica e inferência, esses personagens podem adaptar seu comportamento de acordo com as ações dos jogadores, tornando a experiência do jogo mais imersiva.
 
 Até mesmo na arte, a IA está deixando sua marca. Agentes lógicos podem ser usados para criar obras de arte, aplicando regras e princípios de design para gerar composições estéticas. Isso foi exemplificado quando uma obra de arte criada por um algoritmo de IA foi leiloada pela Christie's, uma casa de leilões de arte de renome, demonstrando a crescente aceitação da IA no mundo da arte.
+
+<div align="center">
+  <img src="../assets/images/ai-art-leilao.png" alt="leilao arte" width="35%">
+  <br>Fonte: <a href="https://g1.globo.com/pop-arte/noticia/2018/10/25/arte-feita-por-algoritmo-e-comprada-por-r-16-milhao-em-leilao-da-christies-em-ny.ghtml">Arte com algoritmo</a>
+</div>
 
 Esses são apenas alguns exemplos de como os agentes lógicos estão moldando nosso mundo e expandindo os horizontes da IA. A capacidade desses agentes de aprender, adaptar-se e tomar decisões informadas promete revolucionar ainda mais setores no futuro.
 
@@ -133,3 +145,8 @@ Esta tabela indica que o agente deve levar o guarda-chuva quando está chovendo,
 ## Referências
 - NORVIG, P.; RUSSELL, S., Inteligência artificial: Tradução da 3a Edição, [s.l.]: Elsevier Brasil, 2014.
 - A Complete Study of Amazon’s Recommendation System Argoid, disponível em: <https://www.argoid.ai/blog/decoding-amazons-recommendation-system>. acesso em: 30 maio 2023.
+- Lógica difusa, in: Wikipédia, a enciclopédia livre, [s.l.: s.n.], 2022.
+- Deep Space 1: Advanced Technologies: Remote Agent FAQ, disponível em: <https://www.jpl.nasa.gov/nmp/ds1/tech/autoraFAQ.html>. acesso em: 31 maio 2023.
+- Quadro feito por algoritmo é comprado por R$ 1,6 milhão em leilão nos EUA, G1, disponível em: <https://g1.globo.com/pop-arte/noticia/2018/10/25/arte-feita-por-algoritmo-e-comprada-por-r-16-milhao-em-leilao-da-christies-em-ny.ghtml>. acesso em: 31 maio 2023.
+- LANDAU, By Elizabeth, 10 Things: Looking Back at Deep Space 1, NASA Solar System Exploration, disponível em: <https://solarsystem.nasa.gov/news/731/10-things-looking-back-at-deep-space-1>. acesso em: 31 maio 2023.
+- Inteligência artificial em Medicina | Machine Learning - Brasil | IBM, disponível em: <https://www.ibm.com/br-pt/watson-health/learn/artificial-intelligence-medicine>. acesso em: 31 maio 2023.
