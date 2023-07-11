@@ -307,7 +307,7 @@ Quando nos deparamos com um novo problema, é importante considerar como as ince
 
 Por exemplo, em um problema médico, uma Rede Bayesiana pode representar as relações entre diferentes sintomas e doenças. O nó de uma doença na rede seria influenciado pelos nós de vários sintomas, permitindo uma avaliação probabilística da presença da doença com base na ocorrência dos sintomas.
 
-Os **Algoritmos Gibbs Sampling e Metropolis-Hastings** são técnicas de amostragem de Monte Carlo que são frequentemente usadas para fazer inferências em Redes Bayesianas. O Gibbs Sampling atualiza um subconjunto de variáveis condicionando-se ao restante, enquanto o Metropolis-Hastings propõe transições para novos estados que são aceitas ou rejeitadas com base em uma probabilidade definida (Geman & Geman, 1984)[^1^]; (Metropolis et al., 1953)[^2^].
+Os **Algoritmos Gibbs Sampling e Metropolis-Hastings** são técnicas de amostragem de Monte Carlo que são frequentemente usadas para fazer inferências em Redes Bayesianas. O Gibbs Sampling atualiza um subconjunto de variáveis condicionando-se ao restante, enquanto o Metropolis-Hastings propõe transições para novos estados que são aceitas ou rejeitadas com base em uma probabilidade definida (Geman & Geman, 1984; Metropolis et al., 1953).
 
 ## Raciocínio Probabilístico ao Longo do Tempo e Filtros de Kalman
 
@@ -323,7 +323,7 @@ Vamos considerar um robô que se move em um ambiente 2D. O modelo de transição
 
 ### Análise de novos problemas com Redes Bayesianas
 
-As Redes Bayesianas são uma ferramenta poderosa para modelar a incerteza em muitos domínios diferentes. Elas são usadas em uma ampla variedade de campos, incluindo medicina, engenharia, ciência da computação, economia e muito mais. Por exemplo, na medicina, as Redes Bayesianas podem ser usadas para modelar a probabilidade de diferentes diagnósticos com base em vários sintomas e histórico do paciente. Em engenharia, elas podem ser usadas para modelar a confiabilidade de sistemas complexos. Para mais informações sobre como as Redes Bayesianas são aplicadas em diferentes domínios, consulte este [artigo](https://www.sciencedirect.com/science/article/abs/pii/S095183200800129X).
+As Redes Bayesianas são uma ferramenta poderosa para modelar a incerteza em muitos domínios diferentes. Elas são usadas em uma ampla variedade de campos, incluindo medicina, engenharia, ciência da computação, economia e muito mais. Por exemplo, na medicina, as Redes Bayesianas podem ser usadas para modelar a probabilidade de diferentes diagnósticos com base em vários sintomas e histórico do paciente. Em engenharia, elas podem ser usadas para modelar a confiabilidade de sistemas complexos. A seguinte dissertação aborda de maneira pratica como usar redes baeysianas para ver a probabilidae de falhas em sistemas IoT na rede da saúde: [dissertação completa](https://bibliotecatede.uninove.br/bitstream/tede/2583/2/Erika%20Midori%20Kinjo.pdf).
 
 ### Algoritmos Gibbs Sampling e Metropolis-Hastings
 
