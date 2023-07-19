@@ -332,6 +332,7 @@ print('Predicted:', decode_predictions(preds, top=3)[0])
 > Output:
 ![prediction](../../assets/images/prediction.png)
 
+O arquivo em notebook esta localizado em: [XAI exemplo verificar imagem de gato](https://github.com/GuilhermeBraz/guilhermebraz.github.io/blob/d32f64a23debdcebdcc0009f6a06d53af1d70018/assets/code/notebooks/xai-gato/XAI.ipynb)
 
 # Conclusão
 
