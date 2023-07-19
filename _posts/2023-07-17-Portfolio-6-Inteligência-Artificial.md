@@ -19,19 +19,19 @@ Esta tecnologia tem crescido exponencialmente, impulsionada por uma tempestade p
 
 Em sua essência, o Aprendizado de Máquina é o estudo de algoritmos e modelos estatísticos que permitem que um computador execute tarefas específicas sem o uso de instruções passo a passo. Em vez disso, esses sistemas confiam em padrões e inferências derivadas dos dados para realizar suas funções. Pense em como uma criança aprende a identificar um cão: ela não precisa que todos os cães do mundo sejam explicitamente apresentados a ela. Com o tempo, após ver várias imagens e interagir com diferentes cães, ela será capaz de reconhecer um cão, mesmo que nunca tenha visto aquele cão em particular. Esse é o princípio central do Aprendizado de Máquina.
 
-![crianca-cao](https://th.bing.com/th/id/OIG.On_iJzFKe.RdXsTRd_px?w=270&h=270&c=6&r=0&o=5&pid=ImgGn)
+<!-- ![crianca-cao](https://th.bing.com/th/id/OIG.On_iJzFKe.RdXsTRd_px?w=270&h=270&c=6&r=0&o=5&pid=ImgGn) -->
 
 ### Importância e aplicações do Aprendizado de Máquina
 
 O Aprendizado de Máquina é mais do que apenas uma moda tecnológica - é uma ferramenta poderosa que já está transformando nosso mundo de maneiras surpreendentes. Imagine se conectar ao Netflix após um longo dia de trabalho, e a plataforma sugere um novo filme que é exatamente do seu gosto - essa é a mágica do Aprendizado de Máquina em ação.
 
-![netflix-casa](https://th.bing.com/th/id/OIG.qbyurb3XufnPmCm3FGpp?w=270&h=270&c=6&r=0&o=5&pid=ImgGn)
+<!-- ![netflix-casa](https://th.bing.com/th/id/OIG.qbyurb3XufnPmCm3FGpp?w=270&h=270&c=6&r=0&o=5&pid=ImgGn) -->
 
 E não é só isso. O Aprendizado de Máquina é a força por trás de uma miríade de outras aplicações que usamos diariamente: desde a assistente virtual em seu smartphone, capaz de entender e responder a suas solicitações verbais, até softwares de tradução automática que quebram barreiras linguísticas e facilitam a comunicação global.
 
 Talvez um dos exemplos mais impressionantes de Aprendizado de Máquina seja o AlphaGo, o programa de computador que surpreendeu o mundo ao vencer o campeão mundial de Go, um jogo considerado muito mais complexo que o xadrez. Desenvolvido pela DeepMind, uma subsidiária do Google, o AlphaGo utilizou técnicas de aprendizado profundo para dominar este jogo milenar e demonstrar o poder e o potencial do Aprendizado de Máquina.
 
-![alpha-go](https://th.bing.com/th/id/OIP.N_6Dd8gvXZIV3b_atSywTQHaE8?pid=ImgDet&rs=1)
+<!-- ![alpha-go](https://th.bing.com/th/id/OIP.N_6Dd8gvXZIV3b_atSywTQHaE8?pid=ImgDet&rs=1) -->
 
 ## Tipos de Aprendizado de Máquina
 
