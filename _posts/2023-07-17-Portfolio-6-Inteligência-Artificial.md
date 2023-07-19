@@ -174,7 +174,6 @@ Aqui estão alguns projetos e problemas que podem ajudar a aprofundar a compreen
 
 Construir um classificador de spam de e-mail é um excelente projeto para começar com o aprendizado supervisionado. O objetivo é treinar um modelo usando um conjunto de e-mails rotulados como "spam" ou "não spam" e, em seguida, testar a eficácia do modelo na classificação de e-mails novos e não vistos.
 
-Claro, vou incorporar as explicações em um novo tutorial. Vamos começar!
 
 **Etapa 1: Importação das bibliotecas necessárias**
 
@@ -254,7 +253,7 @@ O arquivo em notebook esta localizado em: [Classificador de Spam de E-mail](http
 
 ### XAI: Explicando Modelos de Aprendizado de Máquina com Python e LIME
 
-Neste tutorial, demonstraremos como visualizar e entender as decisões de um modelo de aprendizado de máquina usando a técnica de XAI (Explicabilidade em Inteligência Artificial) conhecida como LIME (Local Interpretable Model-agnostic Explanations). Utilizaremos uma imagem como entrada e um modelo pré-treinado (VGG16) para classificar essa imagem. Em seguida, aplicaremos o LIME para entender quais partes da imagem foram mais importantes para a decisão do modelo.
+Neste tutorial, demonstraremos como visualizar e entender as decisões de um modelo de aprendizado de máquina usando a técnica de XAI (Explicabilidade em Inteligência Artificial) conhecida como LIME (Local Interpretable Model-agnostic Explanations). Utilizaremos uma imagem como entrada e um modelo pré-treinado (VGG16) para classificar essa imagem. Em seguida, aplicaremos o LIME para entender quais partes da imagem foram mais importantes para a decisão do modelo. No exemplo usamos a imagem de um gato.
 
 **Passo 1: Instalação das bibliotecas necessárias**
 
