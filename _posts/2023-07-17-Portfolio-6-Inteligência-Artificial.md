@@ -20,18 +20,20 @@ Esta tecnologia tem crescido exponencialmente, impulsionada por uma tempestade p
 Em sua essência, o Aprendizado de Máquina é o estudo de algoritmos e modelos estatísticos que permitem que um computador execute tarefas específicas sem o uso de instruções passo a passo. Em vez disso, esses sistemas confiam em padrões e inferências derivadas dos dados para realizar suas funções. Pense em como uma criança aprende a identificar um cão: ela não precisa que todos os cães do mundo sejam explicitamente apresentados a ela. Com o tempo, após ver várias imagens e interagir com diferentes cães, ela será capaz de reconhecer um cão, mesmo que nunca tenha visto aquele cão em particular. Esse é o princípio central do Aprendizado de Máquina.
 
 <!-- ![crianca-cao](https://th.bing.com/th/id/OIG.On_iJzFKe.RdXsTRd_px?w=270&h=270&c=6&r=0&o=5&pid=ImgGn) -->
-
+![dog-ai](../../assets/images/dog-ai.png)
 ### Importância e aplicações do Aprendizado de Máquina
 
 O Aprendizado de Máquina é mais do que apenas uma moda tecnológica - é uma ferramenta poderosa que já está transformando nosso mundo de maneiras surpreendentes. Imagine se conectar ao Netflix após um longo dia de trabalho, e a plataforma sugere um novo filme que é exatamente do seu gosto - essa é a mágica do Aprendizado de Máquina em ação.
 
 <!-- ![netflix-casa](https://th.bing.com/th/id/OIG.qbyurb3XufnPmCm3FGpp?w=270&h=270&c=6&r=0&o=5&pid=ImgGn) -->
+![netflix](../../assets/images/netflix.png)
 
 E não é só isso. O Aprendizado de Máquina é a força por trás de uma miríade de outras aplicações que usamos diariamente: desde a assistente virtual em seu smartphone, capaz de entender e responder a suas solicitações verbais, até softwares de tradução automática que quebram barreiras linguísticas e facilitam a comunicação global.
 
 Talvez um dos exemplos mais impressionantes de Aprendizado de Máquina seja o AlphaGo, o programa de computador que surpreendeu o mundo ao vencer o campeão mundial de Go, um jogo considerado muito mais complexo que o xadrez. Desenvolvido pela DeepMind, uma subsidiária do Google, o AlphaGo utilizou técnicas de aprendizado profundo para dominar este jogo milenar e demonstrar o poder e o potencial do Aprendizado de Máquina.
 
 <!-- ![alpha-go](https://th.bing.com/th/id/OIP.N_6Dd8gvXZIV3b_atSywTQHaE8?pid=ImgDet&rs=1) -->
+![alpha-go](../../assets/images/alpha-go.png)
 
 ## Tipos de Aprendizado de Máquina
 
@@ -125,7 +127,7 @@ No contexto do aprendizado de máquina, os SOMs são uma técnica de aprendizado
 
 ## Aprendizado por Reforço
 
-O aprendizado por reforço é como aprender a jogar um jogo de video game. No início, você não sabe como controlar seu personagem, quais ações levarão a quais resultados e quais movimentos resultarão na maior pontuação. Com o tempo e através de tentativas e erros, você começa a entender as regras do jogo e melhora sua performance. [Leia mais sobre aprendizado por reforço aqui](https://medium.com/turing-talks/aprendizado-por-refor%C3%A7o-1-introdu%C3%A7%C3%A3o-7382ebb641ab.
+O aprendizado por reforço é como aprender a jogar um jogo de video game. No início, você não sabe como controlar seu personagem, quais ações levarão a quais resultados e quais movimentos resultarão na maior pontuação. Com o tempo e através de tentativas e erros, você começa a entender as regras do jogo e melhora sua performance. [Leia mais sobre aprendizado por reforço aqui](https://medium.com/turing-talks/aprendizado-por-refor%C3%A7o-1-introdu%C3%A7%C3%A3o-7382ebb641ab).
 
 ### Q-Learning
 
@@ -136,6 +138,8 @@ Uma aplicação real do Q-Learning é o sistema de navegação autônoma do Goog
 ### Conceito de recompensa e exploração
 
 A recompensa e a exploração são como um rato em um labirinto procurando por queijo. O rato explora o labirinto (exploração), e quando encontra o queijo, recebe uma recompensa. No aprendizado de máquina, a recompensa é o feedback que o algoritmo recebe para entender se a ação tomada foi boa ou ruim. A exploração se refere ao algoritmo experimentar várias ações para entender qual delas leva à maior recompensa.
+
+![rato-doido](../../assets/images/rato-doido.png)
 
 Um equilíbrio entre a exploração (procurar novas ações) e a exploração (repetir ações que já sabemos que são boas) é crucial para garantir que o algoritmo não fique preso em uma solução subótima ou passe muito tempo procurando pela ação perfeita.
 
